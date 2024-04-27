@@ -14,6 +14,8 @@ import AllTouristsSpot from './pages/AllTouristsSpot';
 import AddSpot from './pages/AddSpot';
 import MyList from './pages/MyList';
 import Provider from './Provider/Provider';
+import SignUp from './pages/SignUp';
+import SignIn from './pages/SignIn';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,7 +37,15 @@ const router = createBrowserRouter([
       {
         path:'/myList',
         element:<MyList></MyList>
-      }
+      }, 
+      {
+        path:'/signup',
+        element:<SignUp></SignUp>
+      },
+      {
+        path:'/signin',
+        element:<SignIn></SignIn>
+      },
     ]
 
   },

@@ -15,7 +15,7 @@ const SignUp = () => {
 	const location = useLocation()
 	const from = location?.state || '/'
 	const [showPassword, setShowPassword] = useState(false);
-    console.log(createUser)
+    // console.log(createUser)
 
    
 
@@ -65,7 +65,7 @@ const SignUp = () => {
 			setShowPassword(!showPassword);
 		};
     return (
-        <div className="hero min-h-screen" style={{ backgroundImage: `url(${design})` }}>
+        <div className="hero min-h-screen">
         <div className="hero-overlay bg-opacity-60"></div>
        
             <title>PropHaven | SignUp</title>

@@ -27,7 +27,7 @@ const Navbar = () => {
 
             <div className="flex gap-2 ">
                 <button className="text-2xl"><MdPlaylistAddCircle /></button>
-                <NavLink to='/myList' className={({ isActive }) => isActive ? 'border border-orange-500 text-orange-400 px-3 text-xl font-bold' : 'font-bold text-xl'}>My List</NavLink>
+                <NavLink to='/myList' className={({ isActive }) => isActive ? 'border border-orange-500 text-[#15803d] px-3 text-xl font-bold' : 'font-bold text-xl'}>My List</NavLink>
             </div>
         </>)
     return (
