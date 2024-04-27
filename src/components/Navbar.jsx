@@ -55,6 +55,7 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-5">
                         {nav}
+                       
 
 
 
@@ -63,7 +64,8 @@ const Navbar = () => {
 
 
                 <div className="navbar-end">
-                    {
+                    
+                    {/* {
                         <div className="dropdown dropdown-end">
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
@@ -85,7 +87,7 @@ const Navbar = () => {
                         </div>
 
 
-                    }
+                    } */}
                 </div>
             </div>
         </div >

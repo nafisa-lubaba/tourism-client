@@ -13,6 +13,7 @@ import Home from './pages/Home';
 import AllTouristsSpot from './pages/AllTouristsSpot';
 import AddSpot from './pages/AddSpot';
 import MyList from './pages/MyList';
+import Provider from './Provider/Provider';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -42,6 +43,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+      <Provider>
       <RouterProvider router={router} />
+      </Provider>
   </React.StrictMode>,
 )
