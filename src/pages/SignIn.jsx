@@ -10,6 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Swal from 'sweetalert2'
 import { AuthContext } from '../Provider/Provider';
+import SocialLogin from './SocialLogin';
 
 const SignIn = () => {
     const { signInUser } = useContext(AuthContext)
@@ -110,7 +111,7 @@ const SignIn = () => {
                             <div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
                         </div>
                         <div>
-                            {/* <SocialLogin></SocialLogin> */}
+                           <SocialLogin></SocialLogin>
                         </div>
 
                         <p className="text-xs text-center sm:px-6 dark:text-gray-600">Dont have an account?
