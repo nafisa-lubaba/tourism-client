@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 
 
 
 const Card = ({ card }) => {
-    const { tourist_spot_name, country_Name, short_description, seasonality, image, travel_time, totalVisitorsPerYear, location } = card
+    const { _id, tourist_spot_name, country_Name, short_description, seasonality, image, travel_time, totalVisitorsPerYear, location } = card
     return (
         <div>
             <div className="">
@@ -33,7 +34,8 @@ ${tourist_spot_name}`} />
                                 className="btn bg-black text-white">
 
                                 View Property</Link> */}
-                                <button className='w-full btn btn-outline border border-[##682018] hover:bg-[#682018] hover:outline-none hover:text-white text-[#682018]'>View more</button>
+                            <Link to={`/card/${_id}`}
+                                className='w-full btn btn-outline border border-[##682018] hover:bg-[#682018] hover:outline-none hover:text-white text-[#682018]'>View more</Link>
 
                         </div>
 

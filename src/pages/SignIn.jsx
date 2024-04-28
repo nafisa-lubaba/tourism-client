@@ -37,7 +37,7 @@ const SignIn = () => {
             toast('Password should have at lease one Lowercase letter')
             return;
         }
-        signInUser(email, password)
+       signInUser(email, password)
             .then(result => {
                 Swal.fire({
                     icon: 'success',

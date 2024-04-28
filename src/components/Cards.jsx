@@ -9,7 +9,7 @@ const Cards = () => {
             <h2>card:{cards.length}</h2>
           <div className="grid grid-rows-1 lg:grid-cols-3 gap-8 h-full">
           {
-            cards.map(card => <Card key={card._id}
+            cards.slice(0,6).map(card => <Card key={card._id}
             card={card}></Card>)
            }
           </div>

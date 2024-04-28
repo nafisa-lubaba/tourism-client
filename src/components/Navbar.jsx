@@ -18,7 +18,7 @@ const Navbar = () => {
                 <button className="text-2xl"><IoIosHome /></button>
 
 
-                <NavLink to='/' className={({ isActive }) => isActive ? 'border border-orange-500 text-orange-400  text-xl font-bold' : 'font-bold text-xl'}>Home</NavLink>
+                <NavLink to='/' className={({ isActive }) => isActive ? 'border bg-[#411b18] text-white  text-xl font-bold' : 'font-bold text-xl px-2'}>Home</NavLink>
             </div>
             <div className="flex gap-2">
                 <button className="text-2xl"><MdPlace /></button>

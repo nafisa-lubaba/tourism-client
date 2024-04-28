@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { useEffect } from "react";
 import { AuthContext } from "../Provider/Provider";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 
 const MyList = () => {
@@ -29,11 +30,7 @@ const MyList = () => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                //   Swal.fire({
-                //     title: "Deleted!",
-                //     text: "Your file has been deleted.",
-                //     icon: "success"
-                //   });
+                
                 fetch(`http://localhost:5000/delete/${_id}`, {
                     method: 'DELETE'
                 })
@@ -45,7 +42,9 @@ const MyList = () => {
                                  "Deleted!",
                                  "Your file has been deleted.",
                               "success"
+
                             );
+                            setItem(item.filter(p => p._id !== _id));
                         }
                     })
             }
@@ -89,8 +88,10 @@ const MyList = () => {
                                 
                                 
                                 {/* <td>{user.lastLoggedAt}</td> */}
-                                <td><button onClick={() => (list._id)} className="btn btn-outline border border-[##682018] hover:bg-[#682018] hover:outline-none hover:text-white text-[#682018]">
-                                    Update</button></td>
+                                <td><Link to={`/updatespot/${list._id}`}
+                                className="btn btn-outline border border-[##682018] hover:bg-[#682018] hover:outline-none hover:text-white text-[#682018]">
+                                    Update</Link></td>
+
                                     <td><button onClick={() =>handleDelete (list._id)} className="btn btn-outline border border-[##682018] hover:bg-[#682018] hover:outline-none hover:text-white text-[#682018]">
                                     Delete</button></td>
                             </tr>)
