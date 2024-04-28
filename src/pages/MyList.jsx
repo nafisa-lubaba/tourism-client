@@ -1,13 +1,13 @@
 import { useContext, useState } from "react";
 import { useEffect } from "react";
 import { AuthContext } from "../Provider/Provider";
+import Swal from "sweetalert2";
 
 
 const MyList = () => {
     const {user} = useContext(AuthContext)
     const [item , setItem] = useState([])
     // console.log(user)
-
     useEffect(()=>{
         fetch(`http://localhost:5000/myList/${user?.email}`)
         .then(res => res.json())
@@ -15,7 +15,46 @@ const MyList = () => {
            setItem(data)
         })
 
-    },[user])
+    },[user]);
+
+    const handleDelete = (_id) => {
+        console.log(_id)
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                //   Swal.fire({
+                //     title: "Deleted!",
+                //     text: "Your file has been deleted.",
+                //     icon: "success"
+                //   });
+                fetch(`http://localhost:5000/delete/${_id}`, {
+                    method: 'DELETE'
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data)
+                        if (data.deletedCount > 0) {
+                            Swal.fire(
+                                 "Deleted!",
+                                 "Your file has been deleted.",
+                              "success"
+                            );
+                        }
+                    })
+            }
+        });
+
+    }
+
+   
+    
     return (
         <div>
              <div className="overflow-x-auto">
@@ -32,7 +71,7 @@ const MyList = () => {
                             <th>seasonality</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className="text-[#682018]">
                         {
                             item.map(list => <tr key={user._id}>
                                
@@ -50,9 +89,9 @@ const MyList = () => {
                                 
                                 
                                 {/* <td>{user.lastLoggedAt}</td> */}
-                                <td><button onClick={() => (user._id)}>
+                                <td><button onClick={() => (list._id)} className="btn btn-outline border border-[##682018] hover:bg-[#682018] hover:outline-none hover:text-white text-[#682018]">
                                     Update</button></td>
-                                    <td><button onClick={() => (user._id)}>
+                                    <td><button onClick={() =>handleDelete (list._id)} className="btn btn-outline border border-[##682018] hover:bg-[#682018] hover:outline-none hover:text-white text-[#682018]">
                                     Delete</button></td>
                             </tr>)
                                
