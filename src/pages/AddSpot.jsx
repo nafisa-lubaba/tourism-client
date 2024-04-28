@@ -18,7 +18,7 @@ const {user} = useContext(AuthContext)
        
         
       
-        const { tourist_spot_name, country_Name, short_description,seasonality ,image, travel_time, totalVisitorsPerYear, location } = data
+        const { tourist_spot_name, country_Name, short_description,average_cost,seasonality ,image, travel_time, totalVisitorsPerYear, location } = data
         const newProduct = {
             email,
             name,
@@ -26,7 +26,7 @@ const {user} = useContext(AuthContext)
             country_Name,
             location,
             short_description,
-            
+            average_cost,
             seasonality,
             image,
             travel_time,
@@ -78,6 +78,7 @@ const {user} = useContext(AuthContext)
                                    <option value="Tajikistan">Tajikistan</option>
                         
                                    <option value="Turkmenistan">Turkmenistan</option>
+                                   <option value="Mongolia">Mongolia</option>
                                </select>
                                {errors.country_Name && <span className='text-red-600 font-bold'>!!!country_Name is required!!!</span>}
 

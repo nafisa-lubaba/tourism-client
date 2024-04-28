@@ -88,8 +88,9 @@ const Provider = ({children}) => {
         signInUser,
         googleLogin,
         githubLogin,
-       logOut,
+        logOut,
         user,
+    
         loading,
         updateUser
        

@@ -1,14 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { IoIosHome } from "react-icons/io";
 import { MdPlace } from "react-icons/md";
 import { IoMdAddCircle } from "react-icons/io";
 import { MdPlaylistAddCircle } from "react-icons/md";
 import img from '../assets/logo.png'
 
+import { useContext } from "react";
+import { AuthContext } from "../Provider/Provider";
+
+
 
 const Navbar = () => {
+    const { logOut, user } = useContext(AuthContext)
     const nav =
-        (<>
+    user ? (<>
             <div className="flex gap-3">
                 <button className="text-2xl"><IoIosHome /></button>
 
@@ -27,9 +32,11 @@ const Navbar = () => {
 
             <div className="flex gap-2 ">
                 <button className="text-2xl"><MdPlaylistAddCircle /></button>
-                <NavLink to='/myList' className={({ isActive }) => isActive ? 'border border-orange-500 text-[#15803d] px-3 text-xl font-bold' : 'font-bold text-xl'}>My List</NavLink>
-            </div>
-        </>)
+                  <NavLink to='/myList' className={({ isActive }) => isActive ? 'border border-orange-500 text-orange-400 px-3 text-xl font-bold' : 'font-bold text-xl'}>my List</NavLink>
+                  </div>
+        </>) : 
+        (<NavLink to='/' className={({ isActive }) => isActive ? 'border border-orange-500 text-orange-400 px-3 text-xl font-bold' : 'font-bold text-xl'}>Home</NavLink>)
+            
     return (
         <div>
 
@@ -65,29 +72,31 @@ const Navbar = () => {
 
                 <div className="navbar-end">
                     
-                    {/* {
-                        <div className="dropdown dropdown-end">
-                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                {
+                        user?.email ? <div className="dropdown dropdown-end">
+                            <label tabIndex={0} title={user.displayName} className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
-                                    <img />
+                                    <img src={user.photoURL} alt={user.displayName} />
                                 </div>
                             </label>
                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow bg-base-100 rounded-box w-52">
                                 <li>
-                                    <button className="btn btn-sm  btn-ghost"></button>
+                                    <button className="btn btn-sm  btn-ghost">{user.displayName}</button>
 
                                 </li>
                                 <li>
                                     <button className="btn btn-sm  btn-ghost"
-
+                                        onClick={logOut}
                                     >Logout</button>
 
                                 </li>
                             </ul>
                         </div>
-
-
-                    } */}
+                            :
+                            <Link to='/signin'>
+                                <button className="btn bg-orange-400 text-white">Login</button>
+                            </Link>
+                    }
                 </div>
             </div>
         </div >

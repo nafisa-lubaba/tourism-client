@@ -6,7 +6,7 @@ const Card = ({ card }) => {
     return (
         <div>
             <div className="">
-                <div className='card bg-base-100 shadow-xl rounded-lg border border-gray-200' data-aos='fade-right'>
+                <div className='card bg-[#434336] bg-opacity-20 backdrop-blur-base rounded-lg text-[#682018]' data-aos='fade-right'>
 
                     <figure className=''>
                         <img className='rounded-xl px-5 pt-5' src={image} alt={`image for the tourist_spot_name
@@ -17,10 +17,11 @@ ${tourist_spot_name}`} />
 
 
                         <div className='mb-3'>
+                            <p className=''>Spot Name:  <span className='font-semibold ml-3'> {tourist_spot_name}</span></p>
                             <p className=''>Location:  <span className='font-semibold ml-3'> {location}</span></p>
-                            <p className=''>Price:  <span className='font-semibold ml-3'>  {short_description}</span></p>
+                            <p className=''>Description:  <span className='font-semibold ml-3'>  {short_description}</span></p>
 
-                            <p className=''>Area:   <span className='font-semibold ml-3'>{travel_time}</span></p>
+                            <p className=''>Travel Time:  <span className='font-semibold ml-3'>{travel_time}</span></p>
 
                         </div>
 
@@ -32,8 +33,7 @@ ${tourist_spot_name}`} />
                                 className="btn bg-black text-white">
 
                                 View Property</Link> */}
-                                <button className="btn">View more</button>
-
+                                <button className='w-full btn btn-outline border border-[##682018] hover:bg-[#682018] hover:outline-none hover:text-white text-[#682018]'>View more</button>
 
                         </div>
 

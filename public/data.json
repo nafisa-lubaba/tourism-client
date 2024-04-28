@@ -26,7 +26,7 @@
     {
       "id": 3,
       "image": "https://i.ibb.co/23Kwydq/card-4.png",
-      'images':'https://i.ibb.co/Pj3sD15/card-4-b.png',
+     
       "tourist_spot_name": "Issyk-Kul Lake",
       "country_Name": "Kyrgyzstan",
       "location": "Issyk-Kul",
@@ -86,7 +86,7 @@
     },
     {
       "id": 8,
-      "image": "https://example.com/image8.jpg",
+      "image": "https://i.ibb.co/7JzmvrR/card-9.png",
       "tourist_spot_name": "Hisor Fortress",
       "country_Name": "Tajikistan",
       "location": "Hisor",
@@ -98,7 +98,7 @@
     },
     {
       "id": 9,
-      "image": "https://example.com/image9.jpg",
+      "image": "https://i.ibb.co/YTcGMxq/card-10-b.png",
       "tourist_spot_name": "Darvaza Gas Crater",
       "country_Name": "Turkmenistan",
       "location": "Derweze",
@@ -110,7 +110,7 @@
     },
     {
       "id": 10,
-      "image": "https://example.com/image10.jpg",
+      "image": "https://i.ibb.co/HCQSrnj/card-11-b.png",
       "tourist_spot_name": "Ancient City of Merv",
       "country_Name": "Turkmenistan",
       "location": "Mary Region",
@@ -122,7 +122,7 @@
     },
     {
       "id": 11,
-      "image": "https://example.com/image11.jpg",
+      "image": "https://i.ibb.co/ypyQqvq/card-12-b.png",
       "tourist_spot_name": "Gobi Desert",
       "country_Name": "Mongolia",
       "location": "South Mongolia",
@@ -134,7 +134,7 @@
     },
     {
       "id": 12,
-      "image": "https://example.com/image12.jpg",
+      "image": "https://i.ibb.co/7KjWq6f/13-b.png",
       "tourist_spot_name": "Terelj National Park",
       "country_Name": "Mongolia",
       "location": "Töv Province",

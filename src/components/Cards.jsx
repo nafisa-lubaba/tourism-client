@@ -5,9 +5,9 @@ import Card from "./Card";
 const Cards = () => {
     const cards = useLoaderData()
     return (
-        <div className="mx-auto w-[90%]">
+        <div className="mx-auto">
             <h2>card:{cards.length}</h2>
-          <div className="grid grid-rows-1 lg:grid-cols-2 gap-8 h-full">
+          <div className="grid grid-rows-1 lg:grid-cols-3 gap-8 h-full">
           {
             cards.map(card => <Card key={card._id}
             card={card}></Card>)
