@@ -1,17 +1,27 @@
+import { useContext } from "react";
 import { useForm } from "react-hook-form";
+import { AuthContext } from "../Provider/Provider";
+import Swal from "sweetalert2";
+
 
 
 const AddSpot = () => {
+const {user} = useContext(AuthContext)
     const {
         register,
         handleSubmit,
         formState: { errors },
     } = useForm()
     const onSubmit = (data) => {
+        const email =user.email
+        const name = user.displayName
+       
         
       
         const { tourist_spot_name, country_Name, short_description,seasonality ,image, travel_time, totalVisitorsPerYear, location } = data
         const newProduct = {
+            email,
+            name,
             tourist_spot_name,
             country_Name,
             location,
@@ -24,7 +34,29 @@ const AddSpot = () => {
         
         }
         console.log(newProduct);
+        fetch('http://localhost:5000/card',{
+            method: 'POST',
+            headers:{
+                'content-type': 'application/json'
+            },
+            body:JSON.stringify(newProduct)
+        })
+        .then (res => res.json())
+        .then (data =>{
+            console.log(data)
+            if(data.insertedId){
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Spots Added Successfully',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                  })
+
+            }
+        
+        })
     }
+        
     return (
         <div>
               <div className="" >

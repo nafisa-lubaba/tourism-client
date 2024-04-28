@@ -7,13 +7,13 @@
       "location": "Samarkand",
       "short_description": "Registan Square is a stunning ensemble of ancient madrasas and a mosque, showcasing the beauty of Islamic architecture.",
       "average_cost": "$20-30 per day",
-      "seasonality": "All year round",
+      "seasonality": "",
       "travel_time": "3-5 days",
       "totalVisitorsPerYear": 500000
     },
     {
       "id": 2,
-      "image": "https://example.com/image2.jpg",
+      "image": "https://i.ibb.co/SXRLSPq/card-3.png",
       "tourist_spot_name": "Bukhara Old City",
       "country_Name": "Uzbekistan",
       "location": "Bukhara",
@@ -25,7 +25,8 @@
     },
     {
       "id": 3,
-      "image": "https://example.com/image3.jpg",
+      "image": "https://i.ibb.co/23Kwydq/card-4.png",
+      'images':'https://i.ibb.co/Pj3sD15/card-4-b.png',
       "tourist_spot_name": "Issyk-Kul Lake",
       "country_Name": "Kyrgyzstan",
       "location": "Issyk-Kul",
@@ -37,7 +38,7 @@
     },
     {
       "id": 4,
-      "image": "https://example.com/image4.jpg",
+      "image": "https://i.ibb.co/1dd2NPf/card-5.png",
       "tourist_spot_name": "Tian Shan Mountains",
       "country_Name": "Kyrgyzstan",
       "location": "Naryn Region",
@@ -49,7 +50,7 @@
     },
     {
       "id": 5,
-      "image": "https://example.com/image5.jpg",
+      "image": "https://i.ibb.co/dkYHB4G/card-6.png",
       "tourist_spot_name": "Charyn Canyon",
       "country_Name": "Kazakhstan",
       "location": "Almaty Region",
@@ -61,7 +62,7 @@
     },
     {
       "id": 6,
-      "image": "https://example.com/image6.jpg",
+      "image": "https://i.ibb.co/17Hx328/card-7.png",
       "tourist_spot_name": "Baikonur Cosmodrome",
       "country_Name": "Kazakhstan",
       "location": "Baikonur",
@@ -73,7 +74,7 @@
     },
     {
       "id": 7,
-      "image": "https://example.com/image7.jpg",
+      "image": "https://i.ibb.co/bjVM9Nh/card-8-b.png",
       "tourist_spot_name": "Fann Mountains",
       "country_Name": "Tajikistan",
       "location": "Sughd Region",
