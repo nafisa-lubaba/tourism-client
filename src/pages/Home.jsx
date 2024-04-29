@@ -2,6 +2,7 @@
 
 import Slider from "../components/Slider";
 import Cards from "../components/Cards";
+import CountryCate from "../components/CountryCate";
 
 
 
@@ -12,6 +13,7 @@ const Home = () => {
         <div>
             <Slider></Slider>
             <Cards></Cards>
+            <CountryCate></CountryCate>
         </div>
 
 
