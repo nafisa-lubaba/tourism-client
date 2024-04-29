@@ -7,13 +7,15 @@ import img from '../assets/logo.png'
 
 import { useContext } from "react";
 import { AuthContext } from "../Provider/Provider";
+import Toogle from "./Toogle";
 
 
 
 const Navbar = () => {
     const { logOut, user } = useContext(AuthContext)
     const nav =
-    user ? (<>
+        user ? (<>
+        
             <div className="flex gap-3">
                 <button className="text-2xl"><IoIosHome /></button>
 
@@ -32,11 +34,18 @@ const Navbar = () => {
 
             <div className="flex gap-2 ">
                 <button className="text-2xl"><MdPlaylistAddCircle /></button>
-                  <NavLink to='/myList' className={({ isActive }) => isActive ? 'border border-orange-500 text-orange-400 px-3 text-xl font-bold' : 'font-bold text-xl'}>my List</NavLink>
-                  </div>
-        </>) : 
-        (<NavLink to='/' className={({ isActive }) => isActive ? 'border border-orange-500 text-orange-400 px-3 text-xl font-bold' : 'font-bold text-xl'}>Home</NavLink>)
+                <NavLink to='/myList' className={({ isActive }) => isActive ? 'border border-orange-500 text-orange-400 px-3 text-xl font-bold' : 'font-bold text-xl'}>my List</NavLink>
+                
+            </div>
+        </>) :
+            (<NavLink to='/' className={({ isActive }) => isActive ? 'border border-orange-500 text-orange-400 px-3 text-xl font-bold' : 'font-bold text-xl'}>Home</NavLink>
             
+            )
+            
+            
+            
+
+
     return (
         <div>
 
@@ -49,6 +58,7 @@ const Navbar = () => {
                         </div>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow w-52 bg-emerald-100 rounded-badge">
                             {nav}
+                            <Toogle></Toogle>
 
 
                             {/* <div className="navbar-end gap-3 lg:hidden">
@@ -62,7 +72,8 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-5">
                         {nav}
-                       
+                        <Toogle></Toogle>
+                        
 
 
 
@@ -71,8 +82,8 @@ const Navbar = () => {
 
 
                 <div className="navbar-end">
-                    
-                {
+
+                    {
                         user?.email ? <div className="dropdown dropdown-end">
                             <label tabIndex={0} title={user.displayName} className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">

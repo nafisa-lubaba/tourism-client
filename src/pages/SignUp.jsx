@@ -66,12 +66,12 @@ const SignUp = () => {
 		};
     return (
         <div className="hero min-h-screen">
-        <div className="hero-overlay bg-opacity-60"></div>
+        <div className=""></div>
        
             <title>PropHaven | SignUp</title>
        
 
-        <div className="w-full max-w-md p-8 space-y-3  bg-white bg-opacity-100 backdrop-blur-base rounded-lg">
+        <div className="w-full max-w-md p-8 space-y-3 bg-[#434336] bg-opacity-20 backdrop-blur-base rounded-lg text-[#682018]">
             <h1 className="text-2xl font-bold text-center">Sign up</h1>
             <form onSubmit={handleSubmit(onSubmit)} noValidate="" action="" className="space-y-6">
                 <div className="space-y-1 text-sm">
@@ -111,7 +111,7 @@ const SignUp = () => {
                         <a rel="noopener noreferrer" href="#">Forgot Password?</a>
                     </div>
                 </div>
-                <button className="block w-full p-3 text-center rounded-sm dark:text-gray-50 dark:bg-violet-600 bg-black text-white">Sign up</button>
+                <button className="block w-full p-3 text-center rounded-sm  btn btn-outline border border-[#682018] hover:text-white  hover:outline-none hover:bg-[#682018] text-[#682018] dark:text-gray-50 dark:bg-violet-600">Sign up</button>
             </form>
             <div className="flex items-center pt-4 space-x-1">
                 <div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
@@ -122,7 +122,7 @@ const SignUp = () => {
 
             </div>
             <p className="text-center sm:px-6 dark:text-gray-600 text-xl">Already have an account?
-                <Link to='/signin' rel="noopener noreferrer" href="#" className="underline text-black font-semibold text-xl">Sign in</Link>
+                <Link to='/signin' rel="noopener noreferrer" href="#" className="underline text-[#682018] font-semibold text-xl">Sign in</Link>
             </p>
         </div>
         <ToastContainer />

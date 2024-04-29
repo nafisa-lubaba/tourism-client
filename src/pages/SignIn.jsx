@@ -66,19 +66,20 @@ const SignIn = () => {
     return (
         
         <div className='hero min-h-screen'>
-                <div className="w-full px-10 max-w-md py-8  rounded-xl
+                <div className="w-full px-10 max-w-md py-8 
+                 bg-[#434336] bg-opacity-20 backdrop-blur-base rounded-lg text-[#682018]
         ">
-                    <div className="hero-overlay bg-opacity-60"></div>
+                    <div className=""></div>
                     {/* <Helmet>
                         <title>PropHaven | LogIn</title>
                     </Helmet> */}
 
-                    <div className="w-full max-w-md p-8 space-y-3  bg-white bg-opacity-100 backdrop-blur-base rounded-lg">
+                    <div className="w-full max-w-md p-8 space-y-3">
                         <h1 className="text-2xl font-bold text-center">Login</h1>
                         <form onSubmit={handleSubmit(onSubmit)} noValidate="" action="" className="space-y-6">
                             <div className="space-y-1 text-sm">
-                                <label htmlFor="username" className="block dark:text-gray-600">Email</label>
-                                <input type="text" name="username" id="username" placeholder="Email" className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
+                                <label htmlFor="userame" className="block dark:text-gray-100">Email</label>
+                                <input type="text" name="username" id="username" placeholder="Email" className="w-full px-4 py-3 rounded-md dark:border-gray-100 dark:bg-gray-50 dark:text-gray-100 focus:dark:border-violet-100"
                                     {...register("email", { required: true })} />
                                 {errors.email && <span className="text-red-600">This field is required</span>}
 
@@ -103,7 +104,7 @@ const SignIn = () => {
                                 </div>
                             </div>
 
-                            <button className="block w-full p-3 text-center rounded-sm btn bg-black text-white">Log In</button>
+                            <button className="block w-full p-3 text-center rounded-sm  btn btn-outline border border-[#682018] hover:text-white  hover:outline-none hover:bg-[#682018] text-[#682018]">Log In</button>
                         </form>
                         <div className="flex items-center pt-4 space-x-1">
                             <div className="flex-1 h-px sm:w-16 dark:bg-gray-300"></div>
@@ -115,7 +116,7 @@ const SignIn = () => {
                         </div>
 
                         <p className="text-xs text-center sm:px-6 dark:text-gray-600">Dont have an account?
-                            <Link to='/signup' rel="noopener noreferrer" href="#" className="underline text-black font-semibold ">Sign up</Link>
+                            <Link to='/signup' rel="noopener noreferrer" href="#" className="underline font-semibold text-[#682018]">Sign up</Link>
                         </p>
                     </div>
                 </div>
