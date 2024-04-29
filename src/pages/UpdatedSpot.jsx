@@ -64,12 +64,12 @@ const UpdatedSpot = () => {
 
                 <div className="p-6  text-neutral-content">
 
-                    <div className=" bg-[#a86a60] bg-opacity-20 backdrop-blur-base rounded-lg">
-                        <h1 className="text-4xl pt-16 font-bold text-center text-[#a86a60]">Update Card</h1>
+                    <div className=" bg-[#21211b] bg-opacity-20 backdrop-blur-base rounded-lg">
+                        <h1 className="text-4xl pt-16 font-bold text-center text-[#682018]">Update Spot</h1>
                         <div className="w-full  p-8 space-y-3 rounded-x">
                             <form onSubmit={handleUpdate} className="space-y-6">
                                 <div className="w-full text-lg">
-                                    <label htmlFor="country_Name" className="block text-[#a86a60]">country_Name</label>
+                                    <label htmlFor="country_Name" className="block text-[#682018]">country_Name</label>
                                     <select name="country_Name" defaultValue={country_Name} id="country_Name" className="w-full text-black px-4 py-3 rounded-md" required>
                                         {/* <option value="">Select Subcategory</option> */}
                                         <option value="Uzbekistan">Uzbekistan</option>
@@ -82,33 +82,33 @@ const UpdatedSpot = () => {
                                     </select>
 
                                 </div>
-                                <div className="flex gap-5 w-full">
-                                    <div className="text-lg w-[50%]">
-                                        <label htmlFor="image" className="block text-[#a86a60]">Image Url</label>
+                                <div className="lg:flex gap-5 w-full">
+                                    <div className="text-lg lg:w-[50%]">
+                                        <label htmlFor="image" className="block text-[#682018]">Image Url</label>
                                         <input type="image_url" name="image" id="image" placeholder="image" defaultValue={image} className="w-full text-black px-4 py-3 rounded-md" required />
 
                                     </div>
-                                    <div className="text-lg w-[50%]">
-                                        <label htmlFor="tourist_spot_name" className="block text-[#a86a60]">Item_name</label>
+                                    <div className="text-lg lg:w-[50%]">
+                                        <label htmlFor="tourist_spot_name" className="block text-[#682018]">Item_name</label>
                                         <input name="tourist_spot_name" id="tourist_spot_name" placeholder="tourist_spot_name" defaultValue={tourist_spot_name} className="text-black w-full px-4 py-3 rounded-md" required />
                                     </div>
                                 </div>
-                                <div className="flex gap-5 w-full">
-                                    <div className="text-lg w-[50%]">
-                                        <label htmlFor="location" className="block text-[#a86a60]">location</label>
+                                <div className="lg:flex gap-5 w-full">
+                                    <div className="text-lg lg:w-[50%]">
+                                        <label htmlFor="location" className="block text-[#682018]">location</label>
                                         <input name="location" id="location" placeholder="location" defaultValue={location} className="text-black w-full px-4 py-3 rounded-md" required />
                                     </div>
-                                    <div className="text-lg w-[50%]">
-                                        <label htmlFor="short_description" className="block text-[#a86a60]">Short Description</label>
+                                    <div className="text-lg lg:w-[50%]">
+                                        <label htmlFor="short_description" className="block text-[#682018]">Short Description</label>
                                         <input name="short_description" id="short_description" placeholder="short_description" defaultValue={short_description} className="text-black w-full px-4 py-3 rounded-md" required />
                                     </div>
                                 </div>
-                                <div className="flex gap-5 w-full">
-                                    <div className="text-lg w-[50%]">
-                                        <label htmlFor="seasonality" className="block text-[#a86a60]">Price</label>
+                                <div className="lg:flex gap-5 w-full">
+                                    <div className="text-lg lg:w-[50%]">
+                                        <label htmlFor="seasonality" className="block text-[#682018]">Price</label>
                                         <input type="seasonality" name="seasonality" id="seasonality" placeholder="seasonality" defaultValue={seasonality} className="w-full text-black px-4 py-3 rounded-md" required />
                                     </div>
-                                    <div className="text-lg w-[50%]">
+                                    <div className="text-lg lg:w-[50%]">
                                         <label htmlFor="travel_time " className="block text-[#682018]">travel_time </label>
                                         <select
                                             id="travel_time "
@@ -127,9 +127,9 @@ const UpdatedSpot = () => {
                                 </div>
                                 
                           
-                                <div className="flex gap-5 w-full">
-                                    <div className="text-lg w-[50%]">
-                                        <label htmlFor="average_cost" className="block text-[#a86a60]">average_cost</label>
+                                <div className="lg:flex gap-5 w-full">
+                                    <div className="text-lg lg:w-[50%]">
+                                        <label htmlFor="average_cost" className="block text-[#682018]">average_cost</label>
                                         <input
                                             id="average_cost"
                                             name="average_cost"
@@ -140,13 +140,13 @@ const UpdatedSpot = () => {
                                             
                                         </input>
                                     </div>
-                                    <div className="text-lg w-[50%]">
-                                        <label htmlFor="totalVisitorsPerYear" className="block text-[#a86a60]">totalVisitorsPerYear</label>
+                                    <div className="text-lg lg:w-[50%]">
+                                        <label htmlFor="totalVisitorsPerYear" className="block text-[#682018]">totalVisitorsPerYear</label>
                                         <input name="totalVisitorsPerYear" id="totalVisitorsPerYear" placeholder="totalVisitorsPerYear" defaultValue={totalVisitorsPerYear} className="text-black w-full px-4 py-3 rounded-md" required />
                                     </div>
                                 </div>
                                 <div className='text-center w-full'>
-                                    <button type="submit" className='w-full btn btn-outline border border-[#a86a60] hover:bg-[#a86a60] hover:outline-none hover:text-white text-[#a86a60]'>Submit</button>
+                                <button className='w-full btn btn-outline border border-[##682018] hover:bg-[#682018] hover:outline-none hover:text-white text-[#682018]'>Submit</button>
                                 </div>
                             </form>
 

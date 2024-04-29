@@ -6,17 +6,17 @@ import { Link } from "react-router-dom";
 
 
 const MyList = () => {
-    const {user} = useContext(AuthContext)
-    const [item , setItem] = useState([])
+    const { user } = useContext(AuthContext)
+    const [item, setItem] = useState([])
     // console.log(user)
-    useEffect(()=>{
+    useEffect(() => {
         fetch(`http://localhost:5000/myList/${user?.email}`)
-        .then(res => res.json())
-        .then (data =>{
-           setItem(data)
-        })
+            .then(res => res.json())
+            .then(data => {
+                setItem(data)
+            })
 
-    },[user]);
+    }, [user]);
 
     const handleDelete = (_id) => {
         console.log(_id)
@@ -30,7 +30,7 @@ const MyList = () => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                
+
                 fetch(`http://localhost:5000/delete/${_id}`, {
                     method: 'DELETE'
                 })
@@ -39,9 +39,9 @@ const MyList = () => {
                         console.log(data)
                         if (data.deletedCount > 0) {
                             Swal.fire(
-                                 "Deleted!",
-                                 "Your file has been deleted.",
-                              "success"
+                                "Deleted!",
+                                "Your file has been deleted.",
+                                "success"
 
                             );
                             setItem(item.filter(p => p._id !== _id));
@@ -52,8 +52,8 @@ const MyList = () => {
 
     }
 
-   
-    
+
+
     return (
         <div>
              <div className="overflow-x-auto">
@@ -75,7 +75,7 @@ const MyList = () => {
                     <tbody className="text-[#682018]">
                         {
                             item.map(list => <tr key={user._id}>
-                               
+
                                 <td>{list._id}</td>
                                 <td>{list.email}</td>
                                 <td>{list.country_Name}</td>
@@ -85,10 +85,10 @@ const MyList = () => {
                                 <td>{list.average_cost}</td>
                                 <td>{list.travel_time}</td>
                                 <td>{list.seasonality}</td>
-                               
 
-                                
-                                
+
+
+
                                 {/* <td>{user.lastLoggedAt}</td> */}
                                 <td><Link to={`/updatespot/${list._id}`}
                                 className="btn btn-outline border border-[##682018] hover:bg-[#682018] hover:outline-none hover:text-white text-[#682018]">
@@ -97,20 +97,23 @@ const MyList = () => {
                                     <td><button onClick={() =>handleDelete (list._id)} className="btn btn-outline border border-[##682018] hover:bg-[#682018] hover:outline-none hover:text-white text-[#682018]">
                                     Delete</button></td>
                             </tr>)
-                               
-                               
-                            
+
+
+
                         }
-                    
-                          
-                               
-                            
-                      
+
+
+
+
+
                     </tbody>
                 </table>
             </div>
-            
+
         </div>
+
+        
+
     );
 };
 
