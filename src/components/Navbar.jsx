@@ -25,7 +25,7 @@ const Navbar = () => {
             <div className="flex gap-2">
                 <button className="text-2xl"><MdPlace /></button>
 
-                <NavLink to='/touristsSpot' className={({ isActive }) => isActive ? 'border border-orange-500 text-orange-400 px-3 text-xl font-bold' : 'font-bold text-xl'}>Tourists Spot</NavLink>
+                <NavLink to='/touristsSpot' className={({ isActive }) => isActive ? 'border border-orange-500 text-orange-400 px-3 text-xl font-bold' : 'font-bold text-xl'}>All Tourists Spot</NavLink>
             </div>
             <div className="flex gap-2">
                 <button className="text-2xl"><IoMdAddCircle /></button>

@@ -16,13 +16,15 @@ const CountryCate = () => {
     
     return (
         <div>
-            {/* <h2>country_name:{category[0].country_Name}</h2> */}
-            {
+           
+          <div className="grid grid-rows-1 lg:grid-cols-2 gap-8 h-full mt-8">
+          {
                 categorys.map(category => <SubCate key={category._id}
                     category={category}
                 ></SubCate>)
 
             }
+          </div>
             
         </div>
     );

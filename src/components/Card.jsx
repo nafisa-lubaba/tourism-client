@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 const Card = ({ card }) => {
-    const { _id, tourist_spot_name, country_Name, short_description, seasonality, image, travel_time, totalVisitorsPerYear, location } = card
+    const { _id, tourist_spot_name, country_Name, short_description, seasonality, image, travel_time, average_cost, totalVisitorsPerYear, location } = card
     return (
         <div>
             <div className="">
@@ -20,9 +20,10 @@ ${tourist_spot_name}`} />
                         <div className='mb-3'>
                             <p className=''>Spot Name:  <span className='font-semibold ml-3'> {tourist_spot_name}</span></p>
                             <p className=''>Location:  <span className='font-semibold ml-3'> {location}</span></p>
-                            <p className=''>Description:  <span className='font-semibold ml-3'>  {short_description}</span></p>
+                        
 
                             <p className=''>Travel Time:  <span className='font-semibold ml-3'>{travel_time}</span></p>
+                            <p className=''>Average Cost <span className='font-semibold ml-3'>{average_cost}</span></p>
 
                         </div>
 

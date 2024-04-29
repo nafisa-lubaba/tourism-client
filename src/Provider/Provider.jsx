@@ -90,7 +90,6 @@ const Provider = ({children}) => {
         githubLogin,
         logOut,
         user,
-    
         loading,
         updateUser
        

@@ -18,6 +18,8 @@ import SignUp from './pages/SignUp';
 import SignIn from './pages/SignIn';
 import CardInfo from './pages/CardInfo';
 import UpdatedSpot from './pages/UpdatedSpot'
+import PrivateRoute from './components/PrivateRoute';
+import SubCardCom from './components/SubCardCom';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,22 +34,38 @@ const router = createBrowserRouter([
       {
         path: '/card/:id',
         loader: () => fetch('http://localhost:5000/card'),
-        element: <CardInfo></CardInfo>,
+        element: <PrivateRoute>
+          <CardInfo></CardInfo>,
+        </PrivateRoute>
+
+      },
+      {
+        path:'/countrysub/:country_Name',
+        loader: ()=> fetch('http://localhost:5000/card'),
+        element: <PrivateRoute>
+          <SubCardCom></SubCardCom>
+        </PrivateRoute>
 
       },
       {
         path: '/touristsSpot',
-        element: <AllTouristsSpot></AllTouristsSpot>,
+        element: <PrivateRoute>
+          <AllTouristsSpot></AllTouristsSpot>,
+        </PrivateRoute>,
         loader: () => fetch('http://localhost:5000/card')
       },
 
       {
         path: '/addSpot',
-        element: <AddSpot></AddSpot>
+        element: <PrivateRoute>
+          <AddSpot></AddSpot>
+        </PrivateRoute>
       },
       {
         path: '/myList',
-        element: <MyList></MyList>
+        element: <PrivateRoute>
+          <MyList></MyList>
+        </PrivateRoute>
       },
       {
         path: '/signup',
@@ -59,7 +77,9 @@ const router = createBrowserRouter([
       },
       {
         path: '/updatespot/:id',
-        element: <UpdatedSpot></UpdatedSpot>,
+        element: <PrivateRoute>
+          <UpdatedSpot></UpdatedSpot>,
+        </PrivateRoute>,
         loader: ({ params }) => fetch(`http://localhost:5000/card/${params.id}`),
 
       },

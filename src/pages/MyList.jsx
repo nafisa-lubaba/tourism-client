@@ -59,7 +59,7 @@ const MyList = () => {
              <div className="overflow-x-auto">
                 <table className="table">
                     {/* head */}
-                    <thead>
+                    <thead className="text-[#682018] font-bold">
                         <tr>
                             <th>Id</th>
                             <th>Email</th>
@@ -68,6 +68,8 @@ const MyList = () => {
                             <th>average_cost</th>
                             <th>travel_time</th>
                             <th>seasonality</th>
+                            <th>Update</th>
+                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody className="text-[#682018]">

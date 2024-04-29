@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const SubCate = ({category}) => {
@@ -31,8 +32,8 @@ ${tourist_spot_name}`} />
                         className="btn bg-black text-white">
 
                         View Property</Link> */}
-                    {/* <Link to={`/card/${_id}`}
-                        className='w-full btn btn-outline border border-[##682018] hover:bg-[#682018] hover:outline-none hover:text-white text-[#682018]'>View more</Link> */}
+                    <Link to={`/countrysub/${country_Name}`}
+                        className='w-full btn btn-outline border border-[##682018] hover:bg-[#682018] hover:outline-none hover:text-white text-[#682018]'>View more</Link>
 
                 </div>
 
