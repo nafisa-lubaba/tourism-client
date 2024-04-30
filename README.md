@@ -1,6 +1,6 @@
 #  Website name: JourneyGenie
 
-# Website live link: https://assignment-10-a925e.web.app
+# Website live link: https://assignment-10-a925e.web.app/
 
 ## Features
 

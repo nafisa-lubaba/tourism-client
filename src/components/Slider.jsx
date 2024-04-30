@@ -29,7 +29,7 @@ const Slider = () => {
                 <img className="w-full rounded-lg" src="https://i.ibb.co/SnmH1S3/slide1.png" />
             </div>
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-40 rounded-lg">
-                <h2 className="text-2xl lg:text-5xl text-white  pb-5 font-bold">Visit Tajikistan With JourneyGenia</h2>
+                <h2 className="text-2xl lg:text-5xl text-white  pb-5 font-bold">Visit Tajikistan With JourneyGenie</h2>
                 <div className="flex w-[350px] lg:w-[650px] text-center">
                     <p className="sm:block hidden lg:text-xl text-white font-bold">Explore the wonders of Central Asia from ancient cities to breathtaking landscapes, there's something for every traveler!</p>
                     
@@ -43,7 +43,7 @@ const Slider = () => {
                 <img className="w-full rounded-lg" src="https://i.ibb.co/CzqpdjK/slide2.png" />
             </div>
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-40 rounded-lg">
-                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">Visit Turkmenistan With JourneyGenia</h2>
+                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">Visit Turkmenistan With JourneyGenie</h2>
                 <div className="flex w-[350px] lg:w-[650px] text-center">
                     <p className="sm:block hidden lg:text-xl text-white font-bold">Explore the wonders of Central Asia from ancient cities to breathtaking landscapes, there's something for every traveler!</p>
                 </div>
@@ -54,7 +54,7 @@ const Slider = () => {
                 <img className="w-full rounded-lg" src="https://i.ibb.co/kDf90sK/slider3.png" />
             </div>
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-40 rounded-lg">
-                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">Visit Kazakhstan With JourneyGenia </h2>
+                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">Visit Kazakhstan With JourneyGenie </h2>
                 <div className="flex w-[350px] lg:w-[650px] text-center">
                     <p className="sm:block hidden lg:text-xl text-white font-bold">Explore the wonders of Central Asia from ancient cities to breathtaking landscapes, there's something for every traveler!</p>
                 </div>
@@ -65,7 +65,7 @@ const Slider = () => {
                 <img className="w-full rounded-lg" src="https://i.ibb.co/JyGXQCr/slider4.png" />
             </div>
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-40 rounded-lg">
-                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">Visit Mongolia With JourneyGenia </h2>
+                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">Visit Mongolia With JourneyGenie </h2>
                 <div className="flex w-[350px] lg:w-[650px] text-center">
                     <p className="sm:block hidden lg:text-xl text-white font-bold">Explore the wonders of Central Asia from ancient cities to breathtaking landscapes, there's something for every traveler!</p>
                 </div>
@@ -76,7 +76,7 @@ const Slider = () => {
                 <img className="w-full rounded-lg" src="https://i.ibb.co/k3hDvRV/slider5.png" />
             </div>
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-40 rounded-lg">
-                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">Visit Kyrgyzstan With JourneyGenia</h2>
+                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">Visit Kyrgyzstan With JourneyGenie</h2>
                 <div className="flex w-[350px] lg:w-[650px] text-center">
                     <p className="sm:block hidden lg:text-xl text-white font-bold">Explore the wonders of Central Asia from ancient cities to breathtaking landscapes, there's something for every traveler!</p>
                 </div>
