@@ -6,13 +6,13 @@ const SubCate = ({category}) => {
 
     return (
         <div className="">
-        <div className='card bg-[#434336] bg-opacity-20 backdrop-blur-base rounded-lg text-[#682018]' data-aos='fade-left'>
+        <div className='card bg-[#434336] bg-opacity-20 backdrop-blur-base rounded-lg text-[#682018]' data-aos=''>
 
-            <figure className=''>
+            <figure className='' data-aos='zoom-in'>
                 <img className='rounded-xl px-5 pt-5' src={image} alt={`image for the tourist_spot_name
 ${tourist_spot_name}`} />
             </figure>
-            <div className='card-body' data-aos='fade-left'>
+            <div className='card-body' data-aos='fade-up-left'>
                 <h1 className=" text-3xl font-bold lg:text-xl lg:font-bold">{country_Name}</h1>
 
 

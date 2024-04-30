@@ -20,6 +20,7 @@ import CardInfo from './pages/CardInfo';
 import UpdatedSpot from './pages/UpdatedSpot'
 import PrivateRoute from './components/PrivateRoute';
 import SubCardCom from './components/SubCardCom';
+import AllTouristsSpots from './pages/AllTouristsSpots';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,11 +30,11 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:5000/card')
+        loader: () => fetch('https://tourism-website-server-zeta.vercel.app/card')
       },
       {
         path: '/card/:id',
-        loader: () => fetch('http://localhost:5000/card'),
+        loader: () => fetch('https://tourism-website-server-zeta.vercel.app/card'),
         element: <PrivateRoute>
           <CardInfo></CardInfo>,
         </PrivateRoute>
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/countrysub/:country_Name',
-        loader: ()=> fetch('http://localhost:5000/card'),
+        loader: ()=> fetch('https://tourism-website-server-zeta.vercel.app/card'),
         element: <PrivateRoute>
           <SubCardCom></SubCardCom>
         </PrivateRoute>
@@ -50,9 +51,9 @@ const router = createBrowserRouter([
       {
         path: '/touristsSpot',
         element: <PrivateRoute>
-          <AllTouristsSpot></AllTouristsSpot>,
+          <AllTouristsSpots></AllTouristsSpots>,
         </PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/card')
+        // loader: () => fetch('https://tourism-website-server-zeta.vercel.app/card')
       },
 
       {
@@ -80,7 +81,7 @@ const router = createBrowserRouter([
         element: <PrivateRoute>
           <UpdatedSpot></UpdatedSpot>,
         </PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/card/${params.id}`),
+        loader: ({ params }) => fetch(`https://tourism-website-server-zeta.vercel.app/card/${params.id}`),
 
       },
     ]

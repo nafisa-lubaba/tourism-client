@@ -36,7 +36,7 @@ const UpdatedSpot = () => {
 
         }
         console.log(newSpot);
-        fetch(`http://localhost:5000/card/${_id}`,{
+        fetch(`https://tourism-website-server-zeta.vercel.app/card/${_id}`,{
             method:'PUT',
             headers:{
                 'content-type':'application/json'

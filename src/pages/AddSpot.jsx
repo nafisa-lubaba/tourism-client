@@ -34,7 +34,7 @@ const {user} = useContext(AuthContext)
         
         }
         console.log(newProduct);
-        fetch('http://localhost:5000/card',{
+        fetch('https://tourism-website-server-zeta.vercel.app/card',{
             method: 'POST',
             headers:{
                 'content-type': 'application/json'
@@ -91,7 +91,7 @@ const {user} = useContext(AuthContext)
                                    {errors.image && <span className='text-red-600 font-bold'>!!!Image is required!!!</span>}
                                </div>
                                <div className="text-lg lg:w-[50%]">
-                                   <label htmlFor="tourist_spot_name" className="block text-[#682018]">tourist_spot_name</label>
+                                   <label htmlFor="tourist_spot_name" className="block text-[#682018]">Tourist_spot_name</label>
                                    <input name="tourist_spot_name" id="tourist_spot_name" placeholder="tourist_spot_name" className="text-black w-full px-4 py-3 rounded-md "
                                        {...register("tourist_spot_name", { required: true })} />
                                    {errors.tourist_spot_name && <span className='text-red-600 font-bold'>!!!tourist_spot_name is required!!!</span>}
@@ -106,7 +106,7 @@ const {user} = useContext(AuthContext)
                                </div>
 
                                <div className="text-lg lg:w-[50%]">
-                                   <label htmlFor="short_description" className="block text-[#682018]">short_description</label>
+                                   <label htmlFor="short_description" className="block text-[#682018]">Short_description</label>
                                    <input name="short_description" id="short_description" placeholder="short_description" className="text-black w-full px-4 py-3 rounded-md "
                                        {...register("short_description", { required: true })} />
                                    {errors.short_description && <span className='text-red-600 font-bold'>!!!short_description is required!!!</span>}

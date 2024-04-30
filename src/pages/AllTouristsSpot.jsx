@@ -4,6 +4,7 @@ import View from "../components/View";
 
 const AllTouristsSpot = () => {
     const cards = useLoaderData()
+    
     return (
         <div className="mx-auto">
         <h2>card:{cards.length}</h2>

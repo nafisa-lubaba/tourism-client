@@ -6,6 +6,8 @@ const Cards = () => {
     const cards = useLoaderData()
     return (
         <div className="mx-auto">
+           <h2 className="font-bold  text-3xl text-center text-[#682018] mt-10">Explore Central Asia's Hidden Treasures</h2>
+           <h2 className=" text-xl text-center text-[#682018] mt-5 mb-5">Embark on a Journey Through Time and Culture in Central Asia's Rich Tapestry of History and Adventure.</h2>
             {/* <h2>card:{cards.length}</h2> */}
           <div className="grid grid-rows-1 lg:grid-cols-3 gap-8 h-full mt-8">
           {

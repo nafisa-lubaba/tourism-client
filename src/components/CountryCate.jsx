@@ -5,7 +5,7 @@ import SubCate from "./SubCate";
 const CountryCate = () => {
     const [categorys, setCategory] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/country')
+        fetch('https://tourism-website-server-zeta.vercel.app/country')
         .then(res => res.json())
         .then(data =>{
             console.log(data)

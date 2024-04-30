@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 const View = ({ card }) => {
     const { _id, tourist_spot_name, country_Name, short_description, seasonality, image, travel_time, totalVisitorsPerYear, location } = card
     return (
-        <div className="">
+       
             <div className='card bg-[#434336] bg-opacity-20 backdrop-blur-base rounded-lg text-[#682018]' data-aos='fade-right'>
-
-                <figure className=''>
+               <figure className=''>
                     <img className='rounded-xl px-5 pt-5' src={image} alt={`image for the tourist_spot_name
 ${tourist_spot_name}`} />
                 </figure>
@@ -34,12 +33,9 @@ ${tourist_spot_name}`} />
 
 
                 </div>
-
-
             </div>
 
 
-        </div>
 
 
     );

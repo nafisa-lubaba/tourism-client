@@ -10,7 +10,7 @@ const MyList = () => {
     const [item, setItem] = useState([])
     // console.log(user)
     useEffect(() => {
-        fetch(`http://localhost:5000/myList/${user?.email}`)
+        fetch(`https://tourism-website-server-zeta.vercel.app/myList/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 setItem(data)
@@ -31,7 +31,7 @@ const MyList = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/delete/${_id}`, {
+                fetch(`https://tourism-website-server-zeta.vercel.app/delete/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
