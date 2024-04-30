@@ -1,8 +1,11 @@
 import { useLoaderData } from "react-router-dom";
 import Card from "./Card";
+import { useEffect } from "react";
+import Aos from "aos";
 
 
 const Cards = () => {
+ 
     const cards = useLoaderData()
     return (
         <div className="mx-auto">

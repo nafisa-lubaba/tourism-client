@@ -1,7 +1,14 @@
+import Aos from "aos";
+import { useEffect } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 
 
 const CardInfo = () => {
+    useEffect(() => {
+        Aos.init();
+
+    }, [])
+    
     const cards = useLoaderData()
     const { id } = useParams()
     // const idInt = parseInt(_id)

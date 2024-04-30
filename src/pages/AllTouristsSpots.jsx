@@ -1,8 +1,14 @@
+import Aos from "aos";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Typewriter } from 'react-simple-typewriter'
 
 
 const AllTouristsSpots = () => {
+  useEffect(() => {
+    Aos.init();
+
+}, [])
   const [card, setCard] = useState([])
   const[displayCard, setDisplayCard]=useState([])
   const handlePriceSort = sortOrder => {
@@ -32,7 +38,21 @@ const AllTouristsSpots = () => {
 
   return (
     <div className="mx-auto">
-      <h2>card:{card.length}</h2>
+    <h2 className="font-bold  text-3xl text-center text-[#682018] mt-10">Explore Central Asia:
+    <span style={{ color: 'green', fontWeight: 'bold' }}>
+          {/* Style will be inherited from the parent element */}
+          <Typewriter
+            words={['Uzbekistan', 'Kyrgyzstan', 'Kazakhstan', 'Kazakhstan','Turkmenistan','Mongolia']}
+            loop={5}
+            cursor
+            cursorStyle='_'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          
+          />
+        </span></h2>
+           <h2 className=" text-xl text-center text-[#682018] mt-5 mb-5">Embark on a Journey Through Time and Culture in Central Asia's Rich Tapestry of History and Adventure.</h2>
       <div className=" text-lg text-center mb-5">
         <details className="dropdown">
           <summary className="m-1 btn">Avarage cost Categories</summary>
