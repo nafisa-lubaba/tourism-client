@@ -29,9 +29,9 @@ const Slider = () => {
                 <img className="w-full rounded-lg" src="https://i.ibb.co/sqFkhD2/tour-3.png" />
             </div>
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-20 rounded-lg">
-                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">Welcome to PropHaven </h2>
+                <h2 className="text-2xl lg:text-5xl text-[#804f13]  pb-5 font-bold">JourneyGenie Your Travel Companion </h2>
                 <div className="flex w-[350px] lg:w-[650px] text-center">
-                    <p className="sm:block hidden lg:text-xl text-white font-bold">Where your dream home finds its perfect sanctuary amidst a sea of real estate possibilities.</p>
+                    <p className="sm:block hidden lg:text-xl text-white font-bold">Unlock unforgettable adventures with JourneyGenie - your all-in-one solution for seamless travel planning and destination management.</p>
                 </div>
             </div>
         </SwiperSlide>
@@ -40,9 +40,9 @@ const Slider = () => {
                 <img className="w-full rounded-lg" src="https://i.ibb.co/qnW73CG/tour-6.png" />
             </div>
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-20 rounded-lg">
-                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">Welcome to PropHaven </h2>
+                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">JourneyGenie Your Travel Companion </h2>
                 <div className="flex w-[350px] lg:w-[650px] text-center">
-                    <p className="sm:block hidden lg:text-xl text-white font-bold">Where your dream home finds its perfect sanctuary amidst a sea of real estate possibilities.</p>
+                    <p className="sm:block hidden lg:text-xl text-white font-bold">Unlock unforgettable adventures with JourneyGenie - your all-in-one solution for seamless travel planning and destination management.</p>
                 </div>
             </div>
         </SwiperSlide>
@@ -51,9 +51,9 @@ const Slider = () => {
                 <img className="w-full rounded-lg" src="https://i.ibb.co/zQhTdh3/banner-1.png" />
             </div>
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-20 rounded-lg">
-                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">Welcome to PropHaven </h2>
+                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">JourneyGenie Your Travel Companion </h2>
                 <div className="flex w-[350px] lg:w-[650px] text-center">
-                    <p className="sm:block hidden lg:text-xl text-white font-bold"> Where your dream home finds its perfect sanctuary amidst a sea of real estate possibilities.</p>
+                    <p className="sm:block hidden lg:text-xl text-white font-bold"> Unlock unforgettable adventures with JourneyGenie - your all-in-one solution for seamless travel planning and destination management.</p>
                 </div>
             </div>
         </SwiperSlide>
@@ -62,9 +62,9 @@ const Slider = () => {
                 <img className="w-full rounded-lg" src="https://i.ibb.co/0YwbJDX/banner-2.png" />
             </div>
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-20 rounded-lg">
-                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">Welcome to PropHaven </h2>
+                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">JourneyGenie Your Travel Companion </h2>
                 <div className="flex w-[350px] lg:w-[650px] text-center">
-                    <p className="sm:block hidden lg:text-xl text-white font-bold"> Where your dream home finds its perfect sanctuary amidst a sea of real estate possibilities.</p>
+                    <p className="sm:block hidden lg:text-xl text-white font-bold"> Unlock unforgettable adventures with JourneyGenie - your all-in-one solution for seamless travel planning and destination management.</p>
                 </div>
             </div>
         </SwiperSlide>
@@ -73,9 +73,9 @@ const Slider = () => {
                 <img className="w-full rounded-lg" src="https://i.ibb.co/w6vJ6yY/banner-3-1.png" />
             </div>
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-20 rounded-lg">
-                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">Welcome to PropHaven </h2>
+                <h2 className="text-2xl lg:text-5xl text-white pb-5 font-bold">JourneyGenie Your Travel Companion </h2>
                 <div className="flex w-[350px] lg:w-[650px] text-center">
-                    <p className="sm:block hidden lg:text-xl text-white font-bold"> Where your dream home finds its perfect sanctuary amidst a sea of real estate possibilities.</p>
+                    <p className="sm:block hidden lg:text-xl text-white font-bold"> Unlock unforgettable adventures with JourneyGenie - your all-in-one solution for seamless travel planning and destination management.</p>
                 </div>
             </div>
         </SwiperSlide>

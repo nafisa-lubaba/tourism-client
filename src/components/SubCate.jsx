@@ -6,7 +6,7 @@ const SubCate = ({category}) => {
 
     return (
         <div className="">
-        <div className='card bg-[#434336] bg-opacity-20 backdrop-blur-base rounded-lg text-[#682018]' data-aos='fade-right'>
+        <div className='card bg-[#434336] bg-opacity-20 backdrop-blur-base rounded-lg text-[#682018]' data-aos='fade-left'>
 
             <figure className=''>
                 <img className='rounded-xl px-5 pt-5' src={image} alt={`image for the tourist_spot_name

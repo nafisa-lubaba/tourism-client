@@ -1,17 +1,21 @@
 
+import Marquee from "react-fast-marquee";
+
 
 const Food = () => {
+   
     return (
-        <section className="py-6 sm:py-12 dark:bg-gray-100 dark:text-gray-800">
+        <section className="py-6 sm:py-12 bg-[#434336] bg-opacity-20 backdrop-blur-base rounded-lg text-[#682018] mt-10 data-aos='fade-right">
+             <Marquee pauseOnHover={true} speed={100}>
             <div className="container p-6 mx-auto space-y-8">
                 <div className="space-y-2 text-center">
-                    <h2 className="text-3xl font-bold">We can offer visitors a tantalizing glimpse into the region's rich culinary traditions.</h2>
-                    <p className="font-serif text-sm dark:text-gray-600">Uzbekistan's famous food that we are offering for you</p>
+                    <h2  className="text-3xl font-bold">We can offer visitors a tantalizing glimpse into the region's rich culinary traditions.</h2>
+                    <p className="font-serif text-sm dark:text-gray-600">Central Asia's famous food that we are offering for you</p>
                 </div>
                 <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
                     <article className="flex flex-col dark:bg-gray-50">
                         <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                            <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="https://i.ibb.co/8jRntLQ/Uzbek-Plov.jpg" />
+                            <img alt="" className="object-cover w-full h-52 dark:bg-gray-500 rounded-2xl" src="https://i.ibb.co/8jRntLQ/Uzbek-Plov.jpg" />
                         </a>
                         <div className="flex flex-col flex-1 p-6">
                             <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
@@ -24,7 +28,7 @@ const Food = () => {
                     </article>
                     <article className="flex flex-col dark:bg-gray-50">
                         <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                            <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="https://i.ibb.co/mDdC4RL/Lagman-Uzbek-Noodle-Vegetable-Soup-Recipe.jpg" />
+                            <img alt="" className="object-cover w-full h-52 dark:bg-gray-500 rounded-2xl" src="https://i.ibb.co/mDdC4RL/Lagman-Uzbek-Noodle-Vegetable-Soup-Recipe.jpg" />
                         </a>
                         <div className="flex flex-col flex-1 p-6">
                             <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
@@ -35,7 +39,7 @@ const Food = () => {
                     </article>
                     <article className="flex flex-col dark:bg-gray-50">
                         <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                            <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="https://i.ibb.co/gJPJkfP/64ff11ede47e7.jpg" />
+                            <img alt="" className="object-cover w-full h-52 dark:bg-gray-500 rounded-2xl" src="https://i.ibb.co/gJPJkfP/64ff11ede47e7.jpg" />
                         </a>
                         <div className="flex flex-col flex-1 p-6">
                             <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
@@ -61,12 +65,14 @@ const Food = () => {
                     </article>
                 </div>
             </div>
+            </Marquee>
+            <Marquee pauseOnHover={true} speed={100}>
             <div className="container p-6 mx-auto space-y-8">
                 
                 <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
                     <article className="flex flex-col dark:bg-gray-50">
                         <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                            <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="https://i.ibb.co/qYBnqYc/q.jpg" />
+                            <img alt="" className="object-cover w-full h-52 dark:bg-gray-500 rounded-2xl" src="https://i.ibb.co/qYBnqYc/q.jpg" />
                         </a>
                         <div className="flex flex-col flex-1 p-6">
                             <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
@@ -79,7 +85,7 @@ const Food = () => {
                     </article>
                     <article className="flex flex-col dark:bg-gray-50">
                         <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                            <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src='https://i.ibb.co/K6Fc2Yj/G-zleme.jpg' />
+                            <img alt="" className="object-cover w-full h-52 dark:bg-gray-500 rounded-2xl" src='https://i.ibb.co/K6Fc2Yj/G-zleme.jpg' />
                         </a>
                         <div className="flex flex-col flex-1 p-6">
                             <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
@@ -90,7 +96,7 @@ const Food = () => {
                     </article>
                     <article className="flex flex-col dark:bg-gray-50">
                         <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                            <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="https://i.ibb.co/yBBZ8Kc/Chorek.jpg" />
+                            <img alt="" className="object-cover w-full h-52 dark:bg-gray-500 rounded-2xl" src="https://i.ibb.co/yBBZ8Kc/Chorek.jpg" />
                         </a>
                         <div className="flex flex-col flex-1 p-6">
                             <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
@@ -116,6 +122,7 @@ const Food = () => {
                     </article>
                 </div>
             </div>
+            </Marquee>
         </section>
         
         

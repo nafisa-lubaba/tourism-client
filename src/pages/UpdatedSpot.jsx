@@ -65,11 +65,11 @@ const UpdatedSpot = () => {
                 <div className="p-6  text-neutral-content">
 
                     <div className=" bg-[#21211b] bg-opacity-20 backdrop-blur-base rounded-lg">
-                        <h1 className="text-4xl pt-16 font-bold text-center text-[#682018]">Update Spot</h1>
+                        <h1 className="text-4xl pt-16 font-bold text-center text-[#682018]">Update The Spot</h1>
                         <div className="w-full  p-8 space-y-3 rounded-x">
                             <form onSubmit={handleUpdate} className="space-y-6">
                                 <div className="w-full text-lg">
-                                    <label htmlFor="country_Name" className="block text-[#682018]">country_Name</label>
+                                    <label htmlFor="country_Name" className="block text-[#682018]">Country_Name</label>
                                     <select name="country_Name" defaultValue={country_Name} id="country_Name" className="w-full text-black px-4 py-3 rounded-md" required>
                                         {/* <option value="">Select Subcategory</option> */}
                                         <option value="Uzbekistan">Uzbekistan</option>
@@ -89,13 +89,13 @@ const UpdatedSpot = () => {
 
                                     </div>
                                     <div className="text-lg lg:w-[50%]">
-                                        <label htmlFor="tourist_spot_name" className="block text-[#682018]">Item_name</label>
+                                        <label htmlFor="tourist_spot_name" className="block text-[#682018]">Tourist_spot_name</label>
                                         <input name="tourist_spot_name" id="tourist_spot_name" placeholder="tourist_spot_name" defaultValue={tourist_spot_name} className="text-black w-full px-4 py-3 rounded-md" required />
                                     </div>
                                 </div>
                                 <div className="lg:flex gap-5 w-full">
                                     <div className="text-lg lg:w-[50%]">
-                                        <label htmlFor="location" className="block text-[#682018]">location</label>
+                                        <label htmlFor="location" className="block text-[#682018]">Location</label>
                                         <input name="location" id="location" placeholder="location" defaultValue={location} className="text-black w-full px-4 py-3 rounded-md" required />
                                     </div>
                                     <div className="text-lg lg:w-[50%]">
@@ -105,11 +105,11 @@ const UpdatedSpot = () => {
                                 </div>
                                 <div className="lg:flex gap-5 w-full">
                                     <div className="text-lg lg:w-[50%]">
-                                        <label htmlFor="seasonality" className="block text-[#682018]">Price</label>
+                                        <label htmlFor="seasonality" className="block text-[#682018]">Seasonality</label>
                                         <input type="seasonality" name="seasonality" id="seasonality" placeholder="seasonality" defaultValue={seasonality} className="w-full text-black px-4 py-3 rounded-md" required />
                                     </div>
                                     <div className="text-lg lg:w-[50%]">
-                                        <label htmlFor="travel_time " className="block text-[#682018]">travel_time </label>
+                                        <label htmlFor="travel_time " className="block text-[#682018]">Travel_time </label>
                                         <select
                                             id="travel_time "
                                             name="travel_time"
@@ -129,7 +129,7 @@ const UpdatedSpot = () => {
                           
                                 <div className="lg:flex gap-5 w-full">
                                     <div className="text-lg lg:w-[50%]">
-                                        <label htmlFor="average_cost" className="block text-[#682018]">average_cost</label>
+                                        <label htmlFor="average_cost" className="block text-[#682018]">Average_cost</label>
                                         <input
                                             id="average_cost"
                                             name="average_cost"
@@ -141,7 +141,7 @@ const UpdatedSpot = () => {
                                         </input>
                                     </div>
                                     <div className="text-lg lg:w-[50%]">
-                                        <label htmlFor="totalVisitorsPerYear" className="block text-[#682018]">totalVisitorsPerYear</label>
+                                        <label htmlFor="totalVisitorsPerYear" className="block text-[#682018]">total Visitors Per Year</label>
                                         <input name="totalVisitorsPerYear" id="totalVisitorsPerYear" placeholder="totalVisitorsPerYear" defaultValue={totalVisitorsPerYear} className="text-black w-full px-4 py-3 rounded-md" required />
                                     </div>
                                 </div>

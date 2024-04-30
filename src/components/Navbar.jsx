@@ -16,29 +16,34 @@ const Navbar = () => {
     const nav =
         user ? (<>
         
-            <div className="flex gap-3">
-                <button className="text-2xl"><IoIosHome /></button>
+            <div className="flex gap-2">
+                <button className="text-2xl text-[#682018]"><IoIosHome /></button>
 
 
                 <NavLink to='/' className={({ isActive }) => isActive ? 'border bg-[#411b18] text-white  text-xl font-bold' : 'font-bold text-xl px-2'}>Home</NavLink>
             </div>
             <div className="flex gap-2">
-                <button className="text-2xl"><MdPlace /></button>
+                <button className="text-2xl text-[#682018]"><MdPlace /></button>
 
-                <NavLink to='/touristsSpot' className={({ isActive }) => isActive ? 'border border-orange-500 text-orange-400 px-3 text-xl font-bold' : 'font-bold text-xl'}>All Tourists Spot</NavLink>
+                <NavLink to='/touristsSpot' className={({ isActive }) => isActive ? 'border bg-[#411b18] text-white px-3 text-xl font-bold' : 'font-bold text-xl'}>All Tourists Spot</NavLink>
             </div>
             <div className="flex gap-2">
-                <button className="text-2xl"><IoMdAddCircle /></button>
-                <NavLink to='/addSpot' className={({ isActive }) => isActive ? 'border border-orange-500 text-orange-400 px-3 text-xl font-bold' : 'font-bold text-xl'}>Add Spot</NavLink>
+                <button className="text-2xl text-[#682018]"><IoMdAddCircle /></button>
+                <NavLink to='/addSpot' className={({ isActive }) => isActive ? 'border bg-[#411b18] text-white px-3 text-xl font-bold' : 'font-bold text-xl'}>Add Spot</NavLink>
             </div>
 
             <div className="flex gap-2 ">
-                <button className="text-2xl"><MdPlaylistAddCircle /></button>
-                <NavLink to='/myList' className={({ isActive }) => isActive ? 'border border-orange-500 text-orange-400 px-3 text-xl font-bold' : 'font-bold text-xl'}>my List</NavLink>
+                <button className="text-2xl text-[#682018]"><MdPlaylistAddCircle /></button>
+                <NavLink to='/myList' className={({ isActive }) => isActive ? 'border bg-[#411b18] text-white  px-3 text-xl font-bold' : 'font-bold text-xl'}>my List</NavLink>
                 
             </div>
         </>) :
-            (<NavLink to='/' className={({ isActive }) => isActive ? 'border border-orange-500 text-orange-400 px-3 text-xl font-bold' : 'font-bold text-xl'}>Home</NavLink>
+    
+        
+
+            (
+            <NavLink to='/' className={({ isActive }) => isActive ? 'border bg-[#411b18] text-white px-3 text-xl font-bold' : 'font-bold text-xl'}>Home</NavLink>
+            
             
             )
             
@@ -105,7 +110,7 @@ const Navbar = () => {
                         </div>
                             :
                             <Link to='/signin'>
-                                <button className="btn bg-orange-400 text-white">Login</button>
+                                <button className="btn bg-[#411b18] text-white ">Login</button>
                             </Link>
                     }
                 </div>

@@ -7,7 +7,7 @@ const Cards = () => {
     return (
         <div className="mx-auto">
             {/* <h2>card:{cards.length}</h2> */}
-          <div className="grid grid-rows-1 lg:grid-cols-3 gap-8 h-full">
+          <div className="grid grid-rows-1 lg:grid-cols-3 gap-8 h-full mt-8">
           {
             cards.slice(0,6).map(card => <Card key={card._id}
             card={card}></Card>)

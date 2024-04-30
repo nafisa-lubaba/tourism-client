@@ -1,8 +1,15 @@
+import Aos from "aos";
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
 
 const Card = ({ card }) => {
+    useEffect(() => {
+        Aos.init();
+
+    }, [])
     const { _id, tourist_spot_name, country_Name, short_description, seasonality, image, travel_time, average_cost, totalVisitorsPerYear, location } = card
     return (
         <div>
