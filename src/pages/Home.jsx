@@ -5,6 +5,7 @@ import Cards from "../components/Cards";
 import CountryCate from "../components/CountryCate";
 import Food from "./Food";
 import Faq from "./Faq";
+import { ToastContainer } from 'react-toastify';
 
 
 
@@ -20,7 +21,10 @@ const Home = () => {
             <Food></Food>
            
             <Faq></Faq>
+            <ToastContainer/>
+
         </div>
+        
 
 
     );
