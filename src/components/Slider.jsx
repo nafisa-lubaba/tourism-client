@@ -32,7 +32,10 @@ const Slider = () => {
                 <h2 className="text-2xl lg:text-5xl text-white  pb-5 font-bold">Visit Tajikistan With JourneyGenia</h2>
                 <div className="flex w-[350px] lg:w-[650px] text-center">
                     <p className="sm:block hidden lg:text-xl text-white font-bold">Explore the wonders of Central Asia from ancient cities to breathtaking landscapes, there's something for every traveler!</p>
+                    
                 </div>
+               
+            
             </div>
         </SwiperSlide>
         <SwiperSlide className="relative">

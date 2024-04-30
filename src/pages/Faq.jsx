@@ -4,8 +4,8 @@ const Faq = () => {
     return (
         <section className="card bg-opacity-30 mt-10 bg-[#434336] text-[#682018]">
     <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
-        <h2 className="text-2xl font-semibold sm:text-4xl mt-5">Travel Tips with JourneyGenie</h2>
-        <p className="mt-4 mb-8 dark:text-gray-600">Welcome to JourneyGenie! Here are some valuable travel tips and advice to enhance your travel experience:</p>
+        <h2 className="text-2xl font-semibold sm:text-4xl mt-5 flex justify-center">Travel Tips with JourneyGenie</h2>
+        <p className="mt-4 mb-8 dark:text-gray-600 flex justify-center">Welcome to JourneyGenie! Here are some valuable travel tips and advice to enhance your travel experience:</p>
         <div className="space-y-4">
             <details className="w-full border rounded-lg">
                 <summary className="px-4 py-6 focus:outline-none focus-visible:dark:ring-violet-600">Pack Light and Smart</summary>

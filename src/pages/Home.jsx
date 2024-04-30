@@ -13,7 +13,7 @@ import Faq from "./Faq";
 const Home = () => {
    
     return (
-        <div>
+        <div className="overflow-x-hidden">
             <Slider></Slider>
             <Cards></Cards>
             <CountryCate></CountryCate>

@@ -4,6 +4,7 @@ import { MdPlace } from "react-icons/md";
 import { IoMdAddCircle } from "react-icons/io";
 import { MdPlaylistAddCircle } from "react-icons/md";
 import img from '../assets/logo.png'
+import 'react-tooltip/dist/react-tooltip.css'
 
 import { useContext } from "react";
 import { AuthContext } from "../Provider/Provider";
@@ -15,7 +16,7 @@ const Navbar = () => {
     const { logOut, user } = useContext(AuthContext)
     const nav =
         user ? (<>
-        
+
             <div className="flex gap-2">
                 <button className="text-2xl text-[#682018]"><IoIosHome /></button>
 
@@ -35,59 +36,70 @@ const Navbar = () => {
             <div className="flex gap-2 ">
                 <button className="text-2xl text-[#682018]"><MdPlaylistAddCircle /></button>
                 <NavLink to='/myList' className={({ isActive }) => isActive ? 'border bg-[#411b18] text-white  px-3 text-xl font-bold' : 'font-bold text-xl'}>my List</NavLink>
-                
+
             </div>
         </>) :
-    
-        
+        (
 
-            (
-            <NavLink to='/' className={({ isActive }) => isActive ? 'border bg-[#411b18] text-white px-3 text-xl font-bold' : 'font-bold text-xl'}>Home</NavLink>
-            
-            
-            )
-            
-            
-            
+            <div className="lg:flex gap-5">
+                <NavLink to='/' className="flex items-center space-x-2" activeClassName="border bg-[#411b18] text-white px-3 text-xl font-bold">
+                    <button className="text-2xl text-[#682018]"><IoIosHome /></button>
+                    <span className="font-bold text-xl">Home</span>
+                </NavLink>
+                <Link to='/signin'>
+                    <button className="btn bg-[#411b18] text-white w-full ">Login</button>
+                </Link>
+                <Link to='/signup'>
+                    <button className="btn bg-[#411b18] text-white w-full">Signup</button>
+                </Link>
+
+
+                
+
+            </div>
+        )
+
+
+
+
+
+
+
 
 
     return (
         <div>
 
 
-            <div className="navbar">
+            <div className="navbar mb-5">
                 <div className="navbar-start ">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow w-52  rounded-badge">
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow w-52  rounded-badge bg-[#eee9aa]">
                             {nav}
-                           
 
 
-                            {/* <div className="navbar-end gap-3 lg:hidden">
-                            <NavLink to='/signin' className="btn bg-green-400 text-white lg:text-2xl mr-5">Sign In</NavLink>
-                        </div> */}
+
+
                         </ul>
                     </div>
 
                     <a className="btn btn-ghost text-xl w-56"><img src={img} alt="" /></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 gap-5">
+                    
                         {nav}
-                       
                         
 
-
-
-                    </ul>
+                    
                 </div>
-                <Toogle></Toogle>
+               
 
 
                 <div className="navbar-end">
+                <Toogle></Toogle>
 
                     {
                         user?.email ? <div className="dropdown dropdown-end">
@@ -96,8 +108,8 @@ const Navbar = () => {
                                     <img src={user.photoURL} alt={user.displayName} />
                                 </div>
                             </label>
-                            
-                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow bg-base-100 rounded-box w-52">
+
+                            <ul tabIndex={0} title={user.displayName} className="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow bg-base-100 rounded-box w-52">
                                 <li>
                                     <button className="btn btn-sm  btn-ghost">{user.displayName}</button>
 
@@ -109,12 +121,10 @@ const Navbar = () => {
 
                                 </li>
                             </ul>
-                            
+
                         </div>
                             :
-                            <Link to='/signin'>
-                                <button className="btn bg-[#411b18] text-white ">Login</button>
-                            </Link>
+                            null
                     }
                 </div>
             </div>

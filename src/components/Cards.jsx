@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Card from "./Card";
-import { useEffect } from "react";
-import Aos from "aos";
+
+import { Typewriter } from 'react-simple-typewriter'
 
 
 const Cards = () => {
@@ -9,7 +9,20 @@ const Cards = () => {
     const cards = useLoaderData()
     return (
         <div className="mx-auto">
-           <h2 className="font-bold  text-3xl text-center text-[#682018] mt-10">Explore Central Asia's Hidden Treasures</h2>
+           <h2 className="font-bold  text-3xl text-center text-[#682018] mt-10">Explore Central Asia:
+    <span style={{ color: 'green', fontWeight: 'bold' }}>
+          {/* Style will be inherited from the parent element */}
+          <Typewriter
+            words={['Uzbekistan', 'Kyrgyzstan', 'Kazakhstan', 'Kazakhstan','Turkmenistan','Mongolia']}
+            loop={5}
+            cursor
+            cursorStyle='_'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          
+          />
+        </span></h2>
            <h2 className=" text-xl text-center text-[#682018] mt-5 mb-5">Embark on a Journey Through Time and Culture in Central Asia's Rich Tapestry of History and Adventure.</h2>
             {/* <h2>card:{cards.length}</h2> */}
           <div className="grid grid-rows-1 lg:grid-cols-3 gap-8 h-full mt-8">

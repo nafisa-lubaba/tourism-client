@@ -61,7 +61,7 @@ const MyList = () => {
                     {/* head */}
                     <thead className="text-[#682018] font-bold">
                         <tr>
-                            <th>Id</th>
+                           
                             <th>Email</th>
                             <th>country_Name</th>
                             <th>tourist_spot_name</th>
@@ -76,7 +76,7 @@ const MyList = () => {
                         {
                             item.map(list => <tr key={user._id}>
 
-                                <td>{list._id}</td>
+                               
                                 <td>{list.email}</td>
                                 <td>{list.country_Name}</td>
 
