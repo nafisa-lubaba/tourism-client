@@ -18,7 +18,7 @@ const CardInfo = () => {
         <div className='mx-auto w-[90%] gap-5'>
 
 
-            <title>PropHaven | CardInfo</title>
+           
 
 
             <div className="">
